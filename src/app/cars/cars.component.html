@@ -1,0 +1,10 @@
+<p>list</p>
+<ul class="list-group">
+    <li *ngFor="let x of cars; let index = index;">
+        <app-cars-details [x]="x">
+        </app-cars-details>
+      <input (click)="deleteTask(index)" type="button"
+value="Delete" class="col-2 btn btn-danger">
+    </li>
+  </ul>
+
